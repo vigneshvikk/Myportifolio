@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Allerta+Stencil&family=Anton&family=Caveat&family=Cinzel&family=Open+Sans:ital,wght@0,400;1,300&family=Playfair+Display+SC:ital,wght@0,400;1,900&family=Poppins:ital,wght@0,400;1,300&family=Prosto+One&family=Rubik+80s+Fade&family=Rubik+Gemstones&family=Rubik+Vinyl&family=Secular+One&family=Sevillana&family=Seymour+One&family=Shadows+Into+Light&family=Sofia+Sans&family=Sofia+Sans+Extra+Condensed&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color: #fff;
+  }
+  html{
+    background-color:black;
+  
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+/* background */
+.background{
+  background-image:url(./portimg/backgroundimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  }
+  /* navbar */
+  #logo{
+    color: #C2114F;
+    font-weight: bolder;
+  }
+  #logoh2{
+    font-weight: bolder;
+  }
+  #logo:hover{
+    color: #fff;
+    transition: 1s;
+  }
+  #logoh2:hover{
+    color: #C2114F;
+    transition: 1s;
+  }
+  div ul li{
+    background-color: rgba(129, 227, 189, 0.453);
+    text-align: center;
+    height: 40px;
+  }
+  #logolist:hover{
+    color: #C2114F;
+    transition: 1.3s;
+
+  }
+  nav{
+    background-color: rgba(0, 0, 0, 0.537);
+  }
+  nav ul{
+    transform: skew(-25deg);
+  }
+nav ul li a{
+
+transform: skew(25deg);
+}
+ 
+nav ul li{
+  border-right: 1px solid grey;
+  box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.968);
+  transition: all 0.2s linear;
+}
+nav ul li:hover{
+      background-color: rgba(129, 227, 189, 0.292);
+}
+nav ul li:first-child{
+  /* top-left  top-right  bottom-right  bottom-left */
+  border-radius: 7px 0 0 7px;
+}
+
+nav ul li:last-child{  
+
+  border-radius:0   7px 7px  0;
+
+}
+/* navbar end */
+
+
+/* banner  */
+ .banner{
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  left: 10px;
+
+
+}
+h1{
+  font-size: 90px;
+  font-weight: 500;
+  color:white;
+  width: 0ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right:1px solid white ;
+  animation: typing 8s  infinite;
+  text-shadow: 1.5px 1.5px rgba(204, 204, 204, 0.648);
+  font-family: 'Aboreto', cursive;
+  
+
+}
+@media (max-width:800px) {
+  h1{
+    font-size: 60px;
+  }
+}
+@media (max-width:500px) {
+  h1{
+    font-size: 30px;
+  }
+}
+div h1{
+ margin-top: 100px;
+}
+
+@keyframes typing {
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width:  11ch;
+  
+
+  }
+}
+#bannercontent{
+
+  font-weight:bold ;
+
+  font-family: 'Allerta Stencil', sans-serif;
+
+}
+/* .parantbanner{
+  position: relative;
+}
+.childbanner{
+  position: absolute;
+  bottom: 0px;
+  
+} */
+#btnbanner a{
+  text-decoration: none;
+  color:white;
+  font-weight: bolder;
+  font-size: 20px;
+  
+}
+#btnbanner {
+  border: none;
+  border-radius: 60px;
+  height: 48px;
+  width: 180px;
+  background-color: #C2114F ;
+ 
+}
+#btnbanner:hover{
+  background-color: #fff;
+}
+
+#btnbanner a:hover{
+  
+  color:  #C2114F;
+    transition: 0.5s;
+}
+#btnbanner a:active{
+  color: #3DBE29;
+}
+
+
+/* banner end */
+
+/* About me start */
+.mainabtme{
+  background-color:rgba(225, 111, 111, 0.285) ;
+  display: flex;
+  margin-top: 638px;
+  border-radius: 10px;
+}
+#abtme{
+   
+  color:  #C2114F;
+ 
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  
+  
+}
+#abtme::after{
+  content: "";
+  height: 5px;
+  width: 44%;
+  background:  #a81548;
+  position:absolute ;
+  left: 44px;
+  bottom: 0px;
+  top: 40px;
+  border-radius: 200px;
+  
+  
+ 
+}
+#abtpara{
+  color:#fff;
+  text-align: justify;
+
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: 20px;
+}
+/* .box1{
+  width: 100%;
+  height: 177vh;
+  background-color:#fff;
+  margin-top: 40px;
+} */
+.myimg{
+  height: 400px;
+}
+/* About me section end */
+
+/* skill section */
+.skills{
+min-height: 370px;
+width: 100%;
+/* background-color: #E83A59; */
+}
+#flush-collapseOne ul li{
+  text-align: left;
+  font-size: 14px;
+}
+#flush-collapseTwo ul li{
+  text-align: left;
+  font-size: 14px;
+}
+#flush-collapseThree ul li{
+  text-align: left;
+  font-size: 14px;
+}
+#myskills{
+  font-size: 36px;
+  font-weight: bold;
+  color: #cd085d;
+  text-align: center;
+}
+
+/* project work */
+.txtalgn{
+  text-align: center;
+  color: #cd085d;
+padding-top: 40px;
+
+  font-size: 36px;
+  font-weight: bold;
+}
+.workone h3{
+  color: #C2114F;
+  font-size: 20px;
+  font-weight: bold;
+}
+.workone p{
+  font-size: 17px;
+  text-align: justify;
+}
+/* project end */
+
+/* contact me start */
+
+  #contact{
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+
+}
+ #contact span{
+  color: #C2114F;
+  font-size: 36px;
+  font-weight: bold;
+}
+#txcnt{
+  font-size: 17px;
+  color: #fff;
+
+}
+#maincnt{
+  border: 1px white solid;
+ text-align: center;
+ padding: 10px;
+
+}
+#msg{
+  background-color: #a81548;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 3px;
+  border: none;
+}
+
+
+#footer{
+  background-color:rgba(225, 111, 111, 0.285);
+}
+.footericons{
+  padding: 20px;
+  text-align: center;
+  
+}
+.footericons p{
+  font-size: 15px;
+}
